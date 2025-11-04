@@ -1,0 +1,103 @@
+:root {
+  --bg: #f7f7f9;
+  --card: #ffffff;
+  --accent: #ff1a1a;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, var(--bg), #eaf6ff);
+  color: #111;
+}
+
+.app {
+  max-width: 980px;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+header {
+  text-align: center;
+}
+
+.controls {
+  margin-top: 8px;
+}
+
+input {
+  padding: 8px 12px;
+  width: 240px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.card img {
+  width: 96px;
+  height: 96px;
+  image-rendering: pixelated;
+}
+
+.card-body h3 {
+  margin: 8px 0 4px;
+  text-transform: capitalize;
+}
+
+.pagination {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin: 18px 0;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+footer {
+  text-align: center;
+  margin-top: 18px;
+  color: #555;
+}
+
+.fav-btn {
+  background: #ffc107;
+  color: #000;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-top: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.fav-btn.active {
+  background: #ff9800;
+  color: #fff;
+}
